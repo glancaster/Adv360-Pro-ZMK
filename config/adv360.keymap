@@ -38,31 +38,31 @@
 
         default_layer {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &tog 1                                                    &mo 3          &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp F     &kp P      &kp B   &none                                                     &none          &kp J   &kp L   &kp U      &kp Y     &kp SQT   &kp BSLH
-&kp ESC    &kp A      &kp R     &kp S     &kp T      &kp G   &none      &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none          &kp M   &kp N   &kp E      &kp I     &kp O     &kp SEMICOLON
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp D      &kp V                         &kp HOME      &kp PG_UP                            &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp SPACE  &kp DEL    &mo 1         &kp PG_DN  &kp ENTER  &kp BACKSPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp CAPS      &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                                         &mo 3          &kp N6  &kp N7    &kp N8     &kp N9    &kp N0     &kp MINUS
+&none         &kp Q      &kp W      &kp F     &kp P      &kp B   &mo 2                                                                          &none          &kp J   &kp L     &kp U      &kp Y     &kp SQT    &kp BSLH
+&kp ESC       &kp A      &kp R      &kp S     &kp T      &kp G   &none      &mo 1           &kp LALT              &kp RIGHT_WIN      &mo 1      &none          &kp M   &kp N     &kp E      &kp I     &kp O      &kp SEMICOLON
+&kp LEFT_WIN  &kp Z      &kp X      &kp C     &kp D      &kp V                              &kp TAB               &kp TAB                                      &kp K   &kp H     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
+&none         &kp MINUS  &kp EQUAL  &kp LEFT  &kp RIGHT          &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_CONTROL      &kp RIGHT_CONTROL  &kp ENTER  &kp BACKSPACE          &kp LEFT  &kp UP     &kp DOWN  &kp RIGHT  &kp ESC
             >;
         };
 
         keypad {
             bindings = <
-&kp EQUAL  &kp N1     &kp N2           &kp N3           &kp N4           &kp KP_MULTIPLY  &trans                                                 &mo 3   &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB    &kp Q      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS     &none                                                  &none   &kp Y   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&kp ESC    &kp A      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &none   &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &kp H   &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT  &kp Z      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL                        &kp HOME      &kp PG_UP                     &kp N   &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 2      &kp GRAVE  &kp KP_NUMBER_0  &kp LEFT         &kp RIGHT                         &trans  &trans     &trans        &kp PG_DN  &trans     &trans          &kp UP      &kp DOWN      &kp KP_DOT     &kp RBKT         &mo 2
+&trans  &trans           &trans           &trans           &trans           &trans  &trans                                      &trans  &trans     &trans     &trans                &trans             &trans           &trans
+&trans  &trans           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &none                                       &none   &kp CARET  &kp AMPS   &kp LEFT_PARENTHESIS  &kp RPAR           &kp KP_MULTIPLY  &trans
+&trans  &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &none   &trans  &trans      &trans  &trans  &none   &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp BACKSLASH    &kp GRAVE
+&trans  &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans                  &trans      &trans                  &kp UNDER  &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE    &kp PIPE         &kp TILDE
+&trans  &trans           &trans           &kp LEFT         &kp RIGHT                &trans  &trans  &trans      &trans  &trans  &trans             &kp LEFT   &kp UP                &kp DOWN           &kp RIGHT_ARROW  &trans
             >;
         };
 
         fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &tog 1                                      &mo 3   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &kp F10  &kp F11  &kp F12  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F7   &kp F8   &kp F9   &trans  &none                                       &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F4   &kp F5   &kp F6   &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1   &kp F2   &kp F3   &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans   &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
