@@ -68,7 +68,7 @@
 
         mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &to 6  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
@@ -93,6 +93,16 @@
 &none  &kp LGUI        &kp LALT                           &kp LCTRL   &kp LSHFT             &none  &none  &none  &none      &none    &none      &none     &kp CAPS    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &none
 &none  &kp C_AL_EMAIL  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp K_CALC  &kp C_AL_TEXT_EDITOR  &none                &none      &none                         &kp INS     &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END     &none
 &none  &none           &none                              &none       &none                        &none  &none  &none      &kp DEL  &kp ENTER  &kp BSPC              &none           &none           &none         &none       &none
+            >;
+        };
+
+        game {
+            bindings = <
+&kp CAPS      &kp N1     &kp N2     &kp N3        &kp N4   &kp N5  &to 0                                                         &mo 3            &kp N6  &kp N7             &kp N8       &kp N9           &kp N0           &kp MINUS
+&none         &kp Q      &kp W      &kp F         &kp P    &kp B   &to 0                                                         &none            &kp J   &kp L              &kp U        &kp Y            &kp SQT          &kp BSLH
+&kp ESC       &kp A      &kp R      &kp S         &kp T    &kp G   &none      &to 0       &to 0      &kp RIGHT_WIN  &mo 2        &none            &kp M   &hm RIGHT_SHIFT N  &hm RCTRL E  &hm RIGHT_ALT I  &hm RIGHT_GUI O  &kp SEMICOLON
+&kp LEFT_WIN  &kp Z      &kp X      &kp C         &kp D    &kp V                          &to 0      &kp TAB                                      &kp K   &kp H              &kp COMMA    &kp DOT          &kp FSLH         &kp RSHFT
+&none         &kp MINUS  &kp EQUAL  &kp LEFT_ALT  &kp TAB          &kp SPACE  &kp ESCAPE  &to 0      &lt 4 DEL      &lt 1 ENTER  &lt 2 BACKSPACE          &kp K_PLAY_PAUSE   &kp K_MUTE   &kp DOWN         &kp RIGHT        &kp ESC
             >;
         };
     };
