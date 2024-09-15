@@ -54,7 +54,7 @@
             bindings = <
 &kp CAPS              &kp N1     &kp N2                             &kp N3      &kp N4       &kp N5  &tog 1                                                                          &mo 3                      &kp N6  &kp N7            &kp N8      &kp N9    &kp N0     &kp MINUS
 &none                 &kp Q      &kp W                              &kp F       &kp P        &kp B   &mo 2                                                                           &to 4                      &kp J   &kp L             &kp U       &kp Y     &kp SQT    &kp BSLH
-&kp ESC               &kp A      &kp R                              &kp S       &kp T        &kp G   &cmd                    &mo 1         &kp LALT      &kp RIGHT_WIN  &mo 2        &kp K_CALCULATOR           &kp M   &kp N             &kp E       &kp I     &kp O      &kp SEMICOLON
+&kp ESC               &kp A      &kp R                              &kp S       &kp T        &kp G   &none                   &mo 1         &kp LALT      &kp RIGHT_WIN  &mo 2        &kp K_CALCULATOR           &kp M   &kp N             &kp E       &kp I     &kp O      &kp SEMICOLON
 &kp LEFT_WIN          &kp Z      &kp X                              &kp C       &kp D        &kp V                                         &kp TAB       &kp TAB                                                &kp K   &kp H             &kp COMMA   &kp DOT   &kp FSLH   &kp SQT
 &kp C_AL_TEXT_EDITOR  &kp MINUS  &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS  &kp K_COPY  &kp K_PASTE          &mt LEFT_CONTROL SPACE  &lt 1 ESCAPE  &kp TAB       &kp RIGHT_ALT  &lt 2 ENTER  &mt RIGHT_SHIFT BACKSPACE          &kp K_PLAY_PAUSE  &kp K_MUTE  &kp DOWN  &kp RIGHT  &kp ESC
             >;
